@@ -207,234 +207,185 @@ footer{
     height: 4rem;
 }
 
-@media only screen and (max-width: 600px){
-    * {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-    
-    @font-face {
-        font-family: Roboto;
-        src: url(./fonts/Roboto-Regular.ttf);
-    }
-    
-    @font-face {
-        font-family: Playfair;
-        src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
-    }
-    
-    h1 {
-        font-family: Playfair;
-        user-select: none;
-    }
-    
-    p {
-        font-family: Roboto;
-    }
-    
-    img {
-        -webkit-user-drag: none;
-    }
-    
+@media only screen and (max-width: 600px){ 
     header {
-        height: auto;
+        height: 100svh;
         background-color: #0891B2;
         padding: 1rem 1rem;
     }
-    
     .headerContent {
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
     .headerImg {
-        width: 70%;
-        height: auto;
+        width: 100%;
+        height: 50%;
         position: relative;
     }
-    
     .headerImg img {
         width: 100%;
         height: 100%;
         position: absolute;
         object-fit: cover;
     }
-    
     .headerText {
         padding: 1rem;
         background-color: white;
         width: 100%;
+        height: 50%;
     }
-    
     .headerText h1 {
-        font-size: 2rem;
-    }
-    
-    .headerText p {
         font-size: 1rem;
-        line-height: 1.5rem;
     }
-    
+    .headerText p {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
     .headerIcons {
         display: flex;
         justify-content: flex-end;
     }
-    
     .headerIcons img {
         width: 2rem;
         height: 2rem;
         transition: 500ms ease-in;
     }
-    
     .headerIcons img:hover {
         cursor: pointer;
         filter: invert(38%) sepia(25%) saturate(7319%) hue-rotate(168deg) brightness(96%) contrast(94%);
     }
-    
     .projects {
         padding: 1rem;
-        height: auto;
+        height: 200svh;
+        justify-content: start;
     }
     .projectsTop{
+        height: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: space-around;
     }
     .projectsBottom{
+        height: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: space-around;
     }
     .projects h1 {
         font-size: 3rem;
+        text-align: center;
     }
-    
     .workContainer {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        height: 100%;
     }
     
     .project {
-        width: 100%;
-        height: auto;
+        width: 55%;
+        height: 25svh;
     }
-    
     .projectImage {
-        height: 40%;
+        height: 50%;
         width: 100%;
         position: relative;
     }
-    
     .projectImage img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
     }
-    
     .projectText {
-        padding: 1rem;
-        height: auto;
+        padding: 0.5rem;
+        height: 50%;
     }
-    
     .projectText h1 {
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
-    
+    .projectText p{
+        font-size: 0.6rem;
+    }
     .projectIcons {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.25rem;
         align-items: center;
     }
-    
     .projectIcons img {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         transition: 500ms ease-in;
     }
-    
     .projectIcons img:hover {
         cursor: pointer;
         filter: invert(38%) sepia(25%) saturate(7319%) hue-rotate(168deg) brightness(96%) contrast(94%);
     }
-    
     footer {
-        height: auto;
+        height: 100svh;
         background-color: #0891B2;
         padding: 1rem 1rem;
     }
-    
     .footerContent {
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
     .footerText {
+        height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        justify-content: space-evenly;
+        gap: 0rem;
         text-align: center;
     }
-    
     .footerImage {
-        height: auto;
+        height: 50%;
         width: 100%;
         position: relative;
     }
-    
     .footerImage img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
     }
-    
     .footerText h1 {
-        color: white;
         font-size: 2rem;
     }
-    
     .footerText p {
-        color: white;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
-    
     .contactInfo {
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
     }
-    
     .contactItem {
         display: flex;
         align-items: center;
         gap: 1rem;
     }
-    
     .contactInfo img {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
         filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(333deg) brightness(104%) contrast(101%);
     }
-    
     .footerIcons {
         display: flex;
         justify-content: center;
         gap: 0.5rem;
     }
-    
     .footerIcons img {
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1200px){
@@ -443,10 +394,12 @@ footer{
     }
     .headerImg{
         width: 50%;
-        height: 60%;
+        height: 70%;
     }
+
     .headerText{
         width: 50%;
+        height: 70%;
         padding: 2rem 2rem;
     }
     .headerIcons img{
@@ -473,6 +426,9 @@ footer{
     .project{
         width: 95%;
         height: 25svh;
+    }
+    .projects h1{
+        font-size: 3rem;
     }
     .project h1{
         font-size: 1rem;
@@ -503,7 +459,7 @@ footer{
         padding: 2rem 2rem;
     }
     .footerImage{
-        height: 45%;
+        height: 55%;
         width: 45%;
     }
     .footerText{
