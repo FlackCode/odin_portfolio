@@ -456,21 +456,22 @@ footer{
     .workContainer{
         height: 100%;
         flex-direction: row;
+        justify-content: center;
     }
     .projectsTop{
         height: 100%;
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     .projectsBottom{
         height: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         width: 100%;
     }
     .project{
-        width: 65%;
+        width: 95%;
         height: 25svh;
     }
     .project h1{
@@ -492,13 +493,31 @@ footer{
     }
     .projects{
         height: 100svh;
-        padding: 2rem 2rem;
+        padding: 2rem 6rem;
         gap: 1rem;
-    }
-    .projects h1{
-        text-align: center;
     }
     .projectHeading{
         align-items: normal;
+    }
+    footer{
+        padding: 2rem 2rem;
+    }
+    .footerImage{
+        height: 45%;
+        width: 45%;
+    }
+    .footerText{
+        height: 45%;
+        width: 55%;
+    }
+    .footerText h1{
+        font-size: 2rem;
+    }
+    .footerText p{
+        font-size: 1rem;
+    }
+    .footerIcons img {
+        width: 3rem;
+        height: 3rem;
     }
 }
